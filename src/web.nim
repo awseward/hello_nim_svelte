@@ -15,6 +15,6 @@ block setPort:
 
 routes:
   extend web, ""
-  extend api, "/api"
+  extend api, "/api/"
 
 runForever()
