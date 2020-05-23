@@ -29,3 +29,6 @@ task svelte, "Generate svelte bundle":
 
 task assets, "Generate packaged assets":
   exec "mkdir -vp src/views && echo src/views/assets_file.nim | xargs -t -I{} nimassets --dir=public --output={}"
+
+task pretty, "Run nimpretty on all .nim files in the repo":
+  exec "find . -type f -not -name 'assets_file.nim' -name '*.nim' | xargs -n1 nimpretty --indent:2 --maxLineLen:120"
