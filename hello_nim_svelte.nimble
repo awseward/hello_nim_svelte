@@ -11,9 +11,10 @@ bin           = @["web"]
 
 # Dependencies
 
-requires "nim >= 1.2.0"
 requires "jester >= 0.4.3"
+requires "nim >= 1.2.0"
 requires "nimassets >= 0.1.0"
+requires "ulid >= 0.3.0"
 
 
 
